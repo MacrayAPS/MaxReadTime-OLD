@@ -1,0 +1,140 @@
+<html>
+<head>
+<title>Untitled Document</title>
+ 
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+ 
+<style type="text/css">
+<!--
+.style1 {color: #003366}
+.style2 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+}
+.style4 {color: #003366; font-weight: bold; }
+-->
+</style>
+<script language="JavaScript" type="text/JavaScript">
+<!--
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_nbGroup(event, grpName) { //v6.0
+  var i,img,nbArr,args=MM_nbGroup.arguments;
+  if (event == "init" && args.length > 2) {
+    if ((img = MM_findObj(args[2])) != null && !img.MM_init) {
+      img.MM_init = true; img.MM_up = args[3]; img.MM_dn = img.src;
+      if ((nbArr = document[grpName]) == null) nbArr = document[grpName] = new Array();
+      nbArr[nbArr.length] = img;
+      for (i=4; i < args.length-1; i+=2) if ((img = MM_findObj(args[i])) != null) {
+        if (!img.MM_up) img.MM_up = img.src;
+        img.src = img.MM_dn = args[i+1];
+        nbArr[nbArr.length] = img;
+    } }
+  } else if (event == "over") {
+    document.MM_nbOver = nbArr = new Array();
+    for (i=1; i < args.length-1; i+=3) if ((img = MM_findObj(args[i])) != null) {
+      if (!img.MM_up) img.MM_up = img.src;
+      img.src = (img.MM_dn && args[i+2]) ? args[i+2] : ((args[i+1])? args[i+1] : img.MM_up);
+      nbArr[nbArr.length] = img;
+    }
+  } else if (event == "out" ) {
+    for (i=0; i < document.MM_nbOver.length; i++) {
+      img = document.MM_nbOver[i]; img.src = (img.MM_dn) ? img.MM_dn : img.MM_up; }
+  } else if (event == "down") {
+    nbArr = document[grpName];
+    if (nbArr)
+      for (i=0; i < nbArr.length; i++) { img=nbArr[i]; img.src = img.MM_up; img.MM_dn = 0; }
+    document[grpName] = nbArr = new Array();
+    for (i=2; i < args.length-1; i+=2) if ((img = MM_findObj(args[i])) != null) {
+      if (!img.MM_up) img.MM_up = img.src;
+      img.src = img.MM_dn = (args[i+1])? args[i+1] : img.MM_up;
+      nbArr[nbArr.length] = img;
+  } }
+}
+//-->
+</script>
+</head>
+<body class="sub" onLoad="MM_preloadImages('homedn.jpg','contactdn.jpg','booksdn.jpg','publisherdn.jpg','productdn.jpg')">
+<blockquote>
+  <blockquote>
+    <form name="form1" method="post" action="">
+      <table width="90%" border="0" cellspacing="4" cellpadding="2" style="text-align: center">
+      <tr style="vertical-align: top">
+        <td colspan="2" style="text-align: center">              
+      </tr>
+      <tr style="vertical-align: top">
+        <td height="36" colspan="2" style="text-align: center"><table border="0" cellpadding="0" cellspacing="0">
+            <tr>
+              <td width="72"><a href="index.htm" target="_top" onClick="MM_nbGroup('down','group1','Home','homedn.jpg',1)" onMouseOver="MM_nbGroup('over','Home','','',1)" onMouseOut="MM_nbGroup('out')"><img src="images/homeup.jpg" alt="HOME" name="Home" width="72" height="18" hspace="25" border="0" onload=""></a></td>
+              <td width="72"><a href="contact.htm" target="_top" onClick="MM_nbGroup('down','group1','Contact','contactdn.jpg',1)" onMouseOver="MM_nbGroup('over','Contact','','',1)" onMouseOut="MM_nbGroup('out')"><img src="images/contactup.jpg" alt="CONTACT" name="Contact" width="72" height="18" hspace="25" border="0" onload=""></a></td>
+              <td width="72"><a href="books.htm" target="_top" onClick="MM_nbGroup('down','group1','Books','booksdn.jpg',1)" onMouseOver="MM_nbGroup('over','Books','','',1)" onMouseOut="MM_nbGroup('out')"><img src="images/booksup.jpg" alt="BOOKS" name="Books" width="72" height="18" hspace="25" border="0" onload=""></a></td>
+              <td width="72"><a href="authors.htm" target="_top" onClick="MM_nbGroup('down','group1','Author','booksdn.jpg',1)" onMouseOver="MM_nbGroup('over','Author','','',1)" onMouseOut="MM_nbGroup('out')"><img src="images/authorup.jpg" alt="" name="Author" width="72" height="18" hspace="25" border="0" onload=""></a></td>
+              <td width="72"><a href="publishers.htm" target="_top" onClick="MM_nbGroup('down','group1','Publisher','publisherdn.jpg',1)" onMouseOver="MM_nbGroup('over','Publisher','','',1)" onMouseOut="MM_nbGroup('out')"><img src="images/publisherup.jpg" alt="PUBLISHER" name="Publisher" width="72" height="18" hspace="25" border="0" onload=""> </a></td>
+              <td width="132"><a href="products.htm" target="_top" onClick="MM_nbGroup('down','group1','Products','productdn.jpg',1)" onMouseOver="MM_nbGroup('over','Products','','',1)" onMouseOut="MM_nbGroup('out')"><img src="images/productup.jpg" alt="PRODUCTS" name="Products" width="72" height="18" hspace="25" border="0" onload=""></a></td>
+            </tr>
+          </table>
+            <hr>
+            </tr>
+      <tr style="vertical-align: top"> 
+          <td width="300" style="text-align: center"> <p align="left"><img src="images/LOGO.jpg" width="168" height="105"></p> 
+            <table width="100%" border="0" cellspacing="0" cellpadding="2">
+              <tr class="FormBackgroundColor"> 
+                  
+            <td width="57%">
+                    Book Name</td>
+                  
+            <td width="43%" style="text-align: center">
+                    Price: $10.99</td>
+              </tr>
+              <tr> 
+                  
+            <td width="57%">                <label for="color" class="HeaderColor">Title:</label>                <br>                <select id="color" name="select">
+                    <option>Lorem</option>
+                    <option>Ipsum</option>
+                    <option>Dolor</option>
+                  </select>              </td>
+                  
+            <td width="43%">               <label for="quantity" class="HeaderColor">Quantity:</label>               <br>                <input type="text" id="quantity" name="textfield" size="5" maxlength="4" value="1">              </td>
+              </tr>
+              <tr style="text-align: right"> 
+                <td colspan="2">                <input type="submit" name="Submit" value="Add to cart">              </td>
+		      </tr>
+            </table>
+          <td width="100%" class="StoryContentColor">          <h1 class="style1"><span class="style2">MAX</span> ReadTime Ltd</h1>
+            <div align="left">Provides an interactive reading experience for all your loved ones. The concept was develped for families that for one reason or another  are not able to read to their children because they are separated by distance. Grandparents missing the joy of reading to their grandchildren, parents that need to travel for business and want the bedtime story experience, and troops that may be away from their children during their most formative years. MAX ReadTime is a unique reading solution for people who value their time with their children and want to provide them with an enriched reading environment. </div>
+            <p><span class="style1"><strong>Reading is a </strong></span> <span class="style4">fundamental skill that is necessary for growth, development and education and should be available to all ages everywhere. </span></p>          
+            <p align="left">These products are designed for easy use by all ages. The large buttons, user friendly interface and simple instructions make it ideal to use for child and adults of any age. You can choose to do a  reading session with a child using our live video option allowing you to interact with the child and enjoy the story telling and learning experience with them. An additional feature lets you record your reading session to send by email for the child to read later, or as a surprise.</p>
+            <p align="left">&nbsp; </p></td>
+        </tr>
+      <tr style="vertical-align: top">
+        <td style="text-align: center">      
+        <td class="StoryContentColor">&nbsp;</td>
+      </tr>
+        
+  </table>
+    </form>
+  </blockquote>
+</blockquote>
+<table width="90%" border="0" cellspacing="0" cellpadding="4" style="text-align: center">
+  <tr class="NavigationColor"> 
+    <td width="15%" style="white-space: nowrap"><a href="#">&lt;&lt; First</a> | <a href="#">&lt; Previous</a></td>
+    <td width="70%" style="text-align: center; white-space: nowrap"><a href="#">1</a> | 2 | <a href="#">3</a> 
+      | <a href="#">4</a> | <a href="#">5</a></td>
+    <td style="text-align: right; white-space: nowrap" width="15%"><a href="#">Next &gt;</a> | <a href="#">Last 
+      &gt;&gt;</a></td>
+  </tr>
+</table>
+</body>
+</html>
